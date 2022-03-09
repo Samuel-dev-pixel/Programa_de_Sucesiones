@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Progresión</title>
+	<link rel="stylesheet" href="esti4.css">
+</head>
+<body>
+<div class="tit">Progresiones y Regresiones aritméticas </div>
+<div class="info" id="info">
+<div class="tex" id="teory">En matemáticas, una progresión aritmética es una sucesión de números tales que la diferencia de cualquier par de términos sucesivos de la secuencia es constante. Dicha cantidad es llamada "Diferencia de la Progresión", "Diferencia" o preferiblemente "Distancia".
+	<br><br>
+Por ejemplo, la sucesión matemática 3, 5, 7, 9, ... es una progresión aritmética de diferencia constante 2, así como 5, 2, -1, -4, ... es una progresión aritmética de diferencia constante -3. A una progresión aritmética de Distancia negativa se le llama también regresión.</div>
+	</div>
+	
+	<div class="sig" onclick="seguir1()" id="siguiente">Siguiente</div>
+	<div class="ant" onclick="anterior1()" id="anterior">Anterior</div>
+<div class="cua"></div>
+<div class="bo">
+	<img src="home.png" alt="" class="im1">
+</div>
+<div class="bo1">
+	<img src="prac.png" alt="" class="im2">
+</div>
+
+<div onclick="practica4()" class="pag" id="boton1">Práctica</div>
+<div onclick="practica3()" class="pag1" id="boton2">Evaluación</div>
+
+<script>
+	inicial=0;
+	d=0;
+	n=0;
+	valo=0;
+	b=0;
+	c=0;
+	x=0;
+	d=0;
+	f=0;
+	e=0;
+	g=0;
+	h=0;
+	k=0;
+	l=0;
+	m=0;
+	valor=0;
+	z=0;
+	b=0;
+	exo=0;
+	function practica4() {
+		if (m==0) {k=0;m=1;practica();} else {k=1;m=0;practica();}
+		
+	}
+	function comprobar1() {
+		progresion2=document.getElementById('progresion2')
+		if (input1.value==valor) {
+			comprobacion1.innerHTML="Correcto";
+		} else {comprobacion1.innerHTML="Incorrecto"}
+		if (x>0) {
+			paso41="an= "+inicial+" + "+"("+n+"-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42="an= "+inicial+" + "+(n-1)+" x "+d;
+			paso43="an="+inicial+" + "+((n-1)*d);
+			paso44="="+(inicial+((n-1)*d));
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+" "+paso44;
+		paso45="an="+d+" x "+n+" + "+x;
+		paso46="an="+(d*n)+" + "+x;
+		paso47="an="+((d*n)+x);
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso47;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			//progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n - "+xx;
+			paso41="an= "+inicial+" + "+"("+n+"-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42="an= "+inicial+" + "+(n-1)+" x "+d;
+			paso43="an="+inicial+" + "+((n-1)*d);
+			paso44="="+(inicial+((n-1)*d));
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+" "+paso44;
+		paso45="an="+d+" x "+n+" - "+xx;
+		paso46="an="+(d*n)+" - "+xx;
+		paso47="an="+((d*n)-x);
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso47;
+		} else {
+			progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n";
+			paso41="an= "+inicial+" + "+"("+n+"-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42="an= "+inicial+" + "+(n-1)+" x "+d;
+			paso43="an="+inicial+" + "+((n-1)*d);
+			paso44="="+(inicial+((n-1)*d));
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+" "+paso44;
+		paso45="an="+d+" x "+n;
+		paso46="an="+(d*n);
+		progresion2.innerHTML=paso45+"<br><br>"+paso46;
+		}
+	}
+	}
+	function comprobar2() {
+		if (input2.value==d&&input3.value==x) {
+			comprobacion2.innerHTML="Correcto";
+		} else {comprobacion2.innerHTML="Incorrecto";}
+			if (x>0) {
+			paso41="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso43="an="+d+"n"+" + "+x;
+			//paso44="="+(inicial+((n-1)*d));
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			//progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n - "+xx;
+			paso41="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso43="an="+d+"n"+" - "+xx;
+			//paso44="="+(inicial+((n-1)*d));
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43;
+		} else {
+			paso41="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso43="an="+d+"n";
+			//paso44="="+(inicial+((n-1)*d));
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43;
+		}
+	}
+	}
+	function comprobar3() {
+		if (input2.value==d&&input3.value==x) {
+			comprobacion2.innerHTML="Correcto";
+		} else {comprobacion2.innerHTML="Incorrecto";}
+			if (x>0) {
+			paso41=valor+"="+inicial+" + "+"("+n+"-1) x d";
+			//"  o  an= "+d+"n + "+x;
+			paso42=valor+" - "+inicial+"=("+(n-1)+")  x d";
+			paso43="("+(valor-inicial)+") ÷ "+(n-1)+"=d";
+			paso44=""+((valor-inicial)/(n-1))+"=d";
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+"<br><br>"+paso44;
+		paso45="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso46="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso47="an="+d+"n"+" + "+x;
+			//paso44="="+(inicial+((n-1)*d));
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso47;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			//progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n - "+xx;
+			paso41=valor+"="+inicial+" + "+"("+n+"-1) x d";
+			//"  o  an= "+d+"n + "+x;
+			paso42=valor+" - "+inicial+"=("+(n-1)+")  x d";
+			paso43="("+(valor-inicial)+") ÷ "+(n-1)+"=d";
+			paso44=""+((valor-inicial)/(n-1))+"=d";
+			progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+"<br><br>"+paso44;
+		paso45="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso46="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso47="an="+d+"n"+" - "+xx;
+			//paso44="="+(inicial+((n-1)*d));
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso47;
+		} else {
+			paso41=valor+"="+inicial+" + "+"("+n+"-1) x d";
+			//"  o  an= "+d+"n + "+x;
+			paso42=valor+" - "+inicial+"=("+(n-1)+")  x d";
+			paso43="("+(valor-inicial)+") ÷ "+(n-1)+"=d";
+			paso44=""+((valor-inicial)/(n-1))+"=d";
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+"<br><br>"+paso44;
+		paso45="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso46="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso47="an="+d+"n";
+			//paso44="="+(inicial+((n-1)*d));
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso4;
+		}
+	}
+	}
+	function comprobar4() {
+		if (input2.value==d&&input3.value==x) {
+			comprobacion2.innerHTML="Correcto";
+		} else {comprobacion2.innerHTML="Incorrecto";}
+		if (x>0) {
+			paso41=valor+"=a1+"+"("+n+"-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42=valor+"=a1 + "+(n-1)+" x "+d;
+			paso43=valor+"=a1 + ("+((n-1)*d)+")";
+			paso44=valor+" - "+((n-1)*d);
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+"<br><br>a1="+paso44+"="+inicial;
+		paso45="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso46="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso47="an="+d+"n"+" + "+x;
+			//paso44="="+(inicial+((n-1)*d));
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso47;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			//progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n - "+xx;
+			paso41=valor+"=a1+"+"("+n+"-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42=valor+"=a1 + "+(n-1)+" x "+d;
+			paso43=valor+"=a1 + ("+((n-1)*d)+")";
+			paso44=valor+" - "+((n-1)*d);
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+"<br><br>a1="+paso44+"="+inicial;
+		paso45="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso46="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso47="an="+d+"n"+" - "+xx;
+			//paso44="="+(inicial+((n-1)*d));
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso47;
+		} else {
+			paso41=valor+"=a1+"+"("+n+"-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso42=valor+"=a1 + "+(n-1)+" x "+d;
+			paso43=valor+"=a1 + ("+((n-1)*d)+")";
+			paso44=valor+" - "+((n-1)*d);
+		progresion1.innerHTML=paso41+"<br><br>"+paso42+"<br><br>"+paso43+"<br><br>a1="+paso44+"="+inicial;
+		paso45="an= "+inicial+" + "+"(n-1) x "+d;
+			//"  o  an= "+d+"n + "+x;
+			paso46="an= "+inicial+" + "+d+" x n"+""+(-1*d);
+			paso47="an="+d+"n";
+			//paso44="="+(inicial+((n-1)*d));
+		progresion2.innerHTML=paso45+"<br><br>"+paso46+"<br><br>"+paso4;
+		}
+	}
+	}
+
+	function practica3() {
+		if (l==0) {k=2;l=1;practica();} else {k=1;l=0;boton2.innerHTML="Evaluación";practica();}
+	}
+	function evaluar() {
+		h=Math.floor(Math.random() * ((4+1) - 1) + 1);
+		if (h==0) {h=1;}
+		if (h==1) {
+			inicial=Math.floor(Math.random() * ((10+0) - 1) + 1);
+			n=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			d=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			x=inicial*1-1*d;
+			valor=inicial*1+(n-1)*d;
+			teory.innerHTML="";
+		if (x>0) {
+		teory.innerHTML="<div>La progresión es: a1= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n + "+x+"</div>";
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			teory.innerHTML="<div>La progresión es: a1= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n - "+xx+"</div>";
+		} else {teory.innerHTML="<div>La progresión es: a1= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n</div>";}
+	}
+			teory.innerHTML=teory.innerHTML+"<br><div>Calcula el valor en la posición "+n+"</div><br><input type='number' id='input1' autocomplete='off' placeholder='Respuesta' class='disti1'><br><input type='submit' onclick='comprobar1()' value='Comprobar' class='a11'><br><div id='comprobacion1' class='boton2'></div><br><div onclick='evaluar()' class='volver3'>Nuevo ejercicio</div><div id='progresion1' class='progre1'></div><div id='progresion2' class='progre11'></div>";        
+		} else {
+			if (h==2) {
+				inicial=Math.floor(Math.random() * ((10+0) - 1) + 1);
+			n=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			d=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			x=inicial*1-1*d;
+			valor=inicial*1+(n-1)*d;
+			teory.innerHTML="";
+			teory.innerHTML="<div>La distancia es "+d+" y el dato inicial es "+inicial+". Calcula la progresión en la forma an=dn+x</div><br><input id='input2' type='number' placeholder='d' autocomplete='off' class='an2'><input id='input3' type='number' placeholder='x' autocomplete='off' class='n2'><br><input type='submit' onclick='comprobar2()' value='Comprobar'class='comprobar22'><br><div id='comprobacion2' class='boton2'></div><br><div onclick='evaluar()' class='volver3'>Nuevo ejercicio</div><div id='progresion1' class='progre1'></div><div id='progresion2' class='progre11'></div>";
+			} else {
+				if (h==3) {
+					inicial=Math.floor(Math.random() * ((10+0) - 1) + 1);
+			n=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			d=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			x=inicial*1-1*d;
+			valor=inicial*1+(n-1)*d;
+			teory.innerHTML="";
+			teory.innerHTML="<div>Uno de los valores de la progresión es "+valor+" con posición "+n+" y el dato inicial es "+inicial+". Calcula la progresión en la forma an=dn+x</div><br><input id='input2' type='number' placeholder='d' autocomplete='off' class='an2'><input id='input3' type='number' placeholder='x' autocomplete='off' class='n2'><br><input type='submit' onclick='comprobar3()' value='Comprobar'class='comprobar22'><br><div id='comprobacion2' class='boton2'></div><br><div onclick='evaluar()' class='volver3'>Nuevo ejercicio</div><div id='progresion1' class='progre13'></div><div id='progresion2' class='progre11'></div>";
+				} else {
+					if (h==4) {
+					inicial=Math.floor(Math.random() * ((10+0) - 1) + 1);
+			n=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			d=Math.floor(Math.random() * ((10+1) - 1) + 1);
+			x=inicial*1-1*d;
+			valor=inicial*1+(n-1)*d;
+			teory.innerHTML="";
+			teory.innerHTML="<div>Uno de los valores de la progresión es "+valor+" con posición "+n+" y la distancia es "+d+". Calcula la progresión en la forma an=dn+x</div><br><input id='input2' type='number' placeholder='d' autocomplete='off' class='an2'><input id='input3' type='number' placeholder='x' autocomplete='off' class='n2'><br><input type='submit' onclick='comprobar4()' value='Comprobar'class='comprobar22'><br><div id='comprobacion2' class='boton2'></div><br><div onclick='evaluar()' class='volver3'>Nuevo ejercicio</div><div id='progresion1' class='progre13'></div><div id='progresion2' class='progre11'></div>";
+				}
+			}
+		}
+	}}
+	function caso4() {
+		teory.innerHTML='<div>Se nos da la distancia y un valor cualquiera junto a su posición, pidiéndosenos hallar la progresión.</div><br><div onclick="intentalo4()" class="intentalo">Inténtalo</div><br><div id="ponerprogresion3"></div><div class="volver3" onclick="practica2()">Volver</div>';
+	}
+	function intentalo4() {
+		if (g==0) {
+			teory.innerHTML=teory.innerHTML+'<br><input type="number" autocomplete="off" placeholder="Valor cualquiera" id="dataazar2" class="dataazar1"><br><input type="number" autocomplete="off" placeholder="Posición del valor" id="posiazar2" class="posiazar"><br><input type="number" autocomplete="off" placeholder="Distancia" id="dato111" class="a31"><br><input type="submit" value="Hallar progresión" onclick="progre4()" class="progre3"><div class="cuadridista" id="distacuadri"></div><div class="cuadri2" id="trescuadri"></div>';g=2;
+		}
+}
+	function progre4() {
+		repetir4=document.getElementById('repetir4');
+		d=dato111.value;
+		datocual=dataazar2.value;
+		posicual=posiazar2.value;
+		inicial=datocual-(posicual-1)*d;
+		x=inicial*1-1*d;
+		paso31="a1="+datocual+" - ("+posicual+" - 1) x "+d;
+		paso32="a1="+datocual+" - ("+(posicual-1)+" x "+d+")";
+		paso33="a1="+datocual+" - ("+((posicual-1)*d)+")";
+		distacuadri.innerHTML="a1=an - (n - 1) x d<br><br>"+paso31+"<br><br>"+paso32+"<br><br>"+paso33+"="+inicial;
+		if (x>0) {
+		paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+" + ("+(-1*d)+")";
+			paso23="an="+inicial+" + "+d+"n + ("+(-1*d)+")";
+			trescuadri.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n + "+x;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			trescuadri.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n - "+xx;
+		} else {
+			paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			trescuadri.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n";}
+	}
+	}
+	function caso3() {
+		teory.innerHTML='<div>Se nos da el primer valor y un valor cualquiera junto a su posición, pidiéndosenos hallar la progresión la distancia</div><br><div onclick="intentalo3()" class="intentalo">Inténtalo</div><br><div id="ponerprogresion2"></div><br><div id="ponerdistancia"></div><div class="volver2" onclick="practica2()">Volver</div>';
+	}
+	function intentalo3() {
+		if (f==0) {
+			teory.innerHTML=teory.innerHTML+'<br><input type="number" autocomplete="off" placeholder="Valor cualquiera" id="dataazar" class="dataazar1"><br><input type="number" autocomplete="off" placeholder="Posición del valor" id="posiazar" class="posiazar"><br><input type="number" autocomplete="off" placeholder="Dato inicial" id="dato11" class="a31"><br><input type="submit" value="Encontrar progresión" onclick="progre3()" class="progre3"><div class="cuadridista" id="distacuadri"></div><div class="cuadri2" id="trescuadri"></div>';f=2;
+		}
+}
+function progre3() {
+		repetir3=document.getElementById('repetir3');
+		inicial=dato11.value;
+		datocual=dataazar.value;
+		posicual=posiazar.value;
+		d=(datocual-inicial)/(posicual-1);
+		paso31="("+datocual+" - "+inicial+") ÷ ("+posicual+" - 1)";
+		paso32=(datocual-inicial)+" ÷ "+(posicual-1);
+		paso33=(datocual-inicial)/(posicual-1);
+		paso34=datocual+"="+inicial+" + ("+posicual+" - 1) x "+d;
+		distacuadri.innerHTML="d=(an-a1)/(n-1)<br><br>"+paso31+"<br><br>"+paso32+"<br><br>"+paso33;
+		x=inicial*1-1*d;
+		if (x>0) {
+		paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+" + ("+(-1*d)+")";
+			paso23="an="+inicial+" + "+d+"n + ("+(-1*d)+")";
+			trescuadri.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n + "+x;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			trescuadri.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n - "+xx;
+		} else {
+			paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			trescuadri.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n";}
+	}
+	//repetir3.style.display="block";
+	}
+	function practica2() {k=0;e=0;b=0;f=0;g=0;practica();}
+	function practica() {
+		if (k==0) {
+			teory.innerHTML='<div class="elige">Elige tu caso</div><div class="caso1" onclick="caso1()">Caso 1</div><div class="caso2" onclick="caso2()">Caso 2</div><div class="caso3" onclick="caso3()">Caso 3</div><div class="caso4" onclick="caso4()">Caso 4</div>';
+			boton1.innerHTML="Teoría";
+			siguiente.style.display="none";
+			anterior.style.display="none";
+			k=1;
+		} else {
+			if (k==1)
+			 {teory.innerHTML='En matemáticas, una progresión aritmética es una sucesión de números tales que la diferencia de cualquier par de términos sucesivos de la secuencia es constante. Dicha cantidad es llamada "Diferencia de la Progresión", "Diferencia" o preferiblemente "Distancia".<br><br>Por ejemplo, la sucesión matemática 3, 5, 7, 9, ... es una progresión aritmética de diferencia constante 2, así como 5, 2, -1, -4, ... es una progresión aritmética de diferencia constante -3. A una progresión aritmética de Distancia negativa se le llama también regresión.';
+			k=0;
+			a=0;
+			boton1.innerHTML="Práctica";
+			boton2.innerHTML="Evaluación";
+			l=0;m=0;
+			siguiente.style.display="block";
+			anterior.style.display="none";} else {
+				if (k==2) {
+					boton2.innerHTML="Teoría";
+					evaluar();
+				}
+			}
+		}
+	}
+	function intentalo2() {
+		if (e==0) {
+			teory.innerHTML=teory.innerHTML+'<br><input type="number" autocomplete="off" placeholder="Distancia" id="dista1" class="disti1"><br><input type="number" autocomplete="off" placeholder="Dato inicial" id="dato1" class="a11"><br><input type="submit" value="Hallar progresión" onclick="progre2()" class="boton2">';e=2;}
+}
+function progre2() {
+		repetir2=document.getElementById('repetir2');
+		inicial=dato1.value;
+		d=dista1.value;
+		x=inicial*1-1*d;
+		paso21="";
+		paso22="";
+		paso23="";
+		if (x>0) {
+		paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			ponerprogresion.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n + "+x;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			ponerprogresion.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n - "+xx;
+		} else {
+			paso21="an="+inicial+" + (n - 1) x "+d+" o:";
+			paso22="an="+inicial+" + n x "+d+(-1*d);
+			paso23="an="+inicial+" + "+d+"n "+(-1*d);
+			ponerprogresion.innerHTML=paso21+"<br><br>"+paso22+"<br><br>"+paso23+"<br><br>an= "+d+"n";}
+	}
+	//repetir2.style.display="block";
+	}
+	function caso2() {
+		teory.innerHTML='<div>Se nos da la distancia y el primer valor, pidiéndosenos hallar la progresión</div><br><div onclick="intentalo2()" class="intentalo">Inténtalo</div><br><div id="ponerprogresion" class="ponerprogresion1"></div><div class="volver2" onclick="practica2()">Volver</div>';
+	}
+
+	function caso1() {
+		teory.innerHTML='<div>Se nos da la progresión completa, y se nos pide algún valor con base a la posición.</div><br><div onclick="intentalo()" class="intentalo">Inténtalo</div><br><div id="progresion1"></div><br><div id="ponervalor"></div><br><div id="ponerposicion"></div><br><div class="proceso1" id="proceso1"></div><div class="proceso2" id="proceso2"></div><div class="volver" onclick="practica2()">Volver</div>';
+	}
+	function intentalo() {
+		if (b==0) {
+		inicial=Math.floor(Math.random() * ((10+1) - 0) + 0);
+		if (inicial==0) {inicial=1;}
+		d=Math.floor(Math.random() * ((10+1) - 1) + 1);
+		x=inicial*1-1*d;
+		if (x>0) {
+		progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n + "+x;
+	} else {
+		if (x<0) {
+			xx=x*(-1);
+			progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n - "+xx;
+		} else {progresion1.innerHTML="an= "+inicial+" + "+"(n-1) x "+d+"  o  an= "+d+"n";}
+	}
+		teory.innerHTML=teory.innerHTML+'<br><div onclick="pos()" class="posival">Dar posición y encontrar valor</div>';
+	}
+	b=1;
+}
+function pos() {
+		if (c==0) {
+		teory.innerHTML=teory.innerHTML+'<br><input type="number" autocomplete="off" placeholder="Posición" id="posi" class="posi"><br><input type="submit" value="Encontrar valor" onclick="pos2()" class="encovalo">';c=2;}
+	}
+	function pos2() {
+		repetir1=document.getElementById('repetir1');
+		valo=inicial+(posi.value-1)*d;
+		paso1=inicial+" + ("+posi.value+" - 1) + "+d;
+		paso2=inicial+" + "+(posi.value-1)+" x "+d;
+		paso3=inicial+" + "+((posi.value-1)*1*d*1);
+		paso4=inicial*1+((posi.value-1)*1*d*1);
+		paso5=d+" x "+posi.value+" + "+"("+x+")";
+		paso6=(d*posi.value)+" + "+"("+x+")";
+		paso7=(d*posi.value)+x;
+		proceso1.innerHTML="Proceso 1:<br><br>"+paso1+"<br><br>"+paso2+"<br><br>"+paso3+"<br><br>"+paso4;
+		proceso2.innerHTML="Proceso 2:<br><br>"+paso5+"<br><br>"+paso6+"<br><br>"+paso7;
+		ponervalor.innerHTML="El valor es: "+valo;
+	}
+	a=0;
+	function seguir1() {
+		if (a==0) {
+			teory.innerHTML="Formulación<br>La fórmula de una progresión aritmética está compuesta por 4 variables diferentes: <br>an, que representa un valor concreto de la sucesión.<br>a1, que es el primer valor de la sucesión.<br>n, que representa la posición del valor an.<br>d, que es la distancia entre valores.<br>Están dispuestos de la siguiente forma:<br>an = a1 + (n - 1) x d<br>Pudiendo también verse de la siguiente forma:<br>an = dn + X<br>siendo X la diferencia entre -d y a1, o sea, X = (-d + a1)";
+			teory.style.fontSize="105%";
+			anterior.style.display="block";
+			a=1;
+		} else {
+			if (a==1) {
+				teory.innerHTML="Ejecución<br>Existen varios casos:<br><br>Caso 1: Se nos da la progresión y se nos pide hallar el valor de una posición en concreto.<br>Ejemplo: an = 2 + (n - 1) x 3. Halle el valor en la posición 3.<br>Primero, se reemplazan las variables: an = 2 + (3-1) x 2<br>Entonces se inicia la resolución de la ecuación: an = 2 + 2 x 2<br>Y se continua naturalmente: an = 2 + 4<br>Encontrando la solución: an = 6";
+				teory.style.fontSize="130%";
+				a=2;
+			} else {
+				if (a==2) {
+				teory.innerHTML="Caso 2: Se nos da la distancia y el primer valor, pidiéndosenos hallar la progresión.<br>Ejemplo: d = 4 y a1 = 6. Halle la progresión.<br>Se reemplazan los valores: an = 6 + (n - 1) * 6<br>En teoría eso sería todo, pero se nos puede pedir en la forma an = dn + X<br>Así que: an = 6 + 6n - 6<br>Por lo cual: an = 6n (con X = 0)";
+				teory.style.fontSize="130%";
+				a=3;
+				} else {
+					if (a==3) {
+						teory.innerHTML="Caso 3: Se nos da el primer valor y un valor cualquiera junto a su posición, pidiéndosenos hallar la progresión y la distancia.<br>Ejemplo: a1 = 3, an = 15 con n = 4. Halle la progresión.<br>Como siempre, se reemplazan las variables: 15 = 3 + (4 - 1) x d<br>Por lo que: 15 = 3 + 3 x d<br>Así que: 15 - 3 = 3 x d<br>De manera que: 12 = 3 x d<br>Siguiendo con: 12 / 3 = d<br>Entonces: 4 = d<br>Siendo la progresión: an = 3 + (n - 1) x 4<br>Siendo en su otra forma: an = 3 + 4n - 4<br>Es decir: an = 4n - 1";
+						teory.style.fontSize="100%";
+				a=4;
+					} else {
+						if (a==4) {
+							teory.innerHTML="Caso 4: Se nos da la distancia y un valor cualquiera junto a su posición, pidiéndosenos hallar la progresión.<br>Ejemplo: d = 5, an =  17 con n=3<br>Reemplazamos valores: 17 = a1 + (3-1) x 5<br>Prosiguiendo: 17 = a1 + 2 x 5<br>Continuando: 17 = a1 + 10<br>Y: 17 - 10 = a1<br>Así que: 7 = a1<br>Siendo la progresión: an = 7 + (n - 1) * 5<br>Y en su otra manera: an = 7 + 5n - 5<br>Más simplemente: an = 5n + 2";
+							teory.style.fontSize="110%";
+							siguiente.style.display="none";
+							a=5;
+						}
+					}
+				}
+			}
+		}
+	}
+	function anterior1() {
+		if (a==2) {
+			teory.innerHTML="Formulación<br>La fórmula de una progresión aritmética está compuesta por 4 variables diferentes: <br>an, que representa un valor concreto de la sucesión.<br>a1, que es el primer valor de la sucesión.<br>n, que representa la posición del valor an.<br>d, que es la distancia entre valores.<br>Están dispuestos de la siguiente forma:<br>an = a1 + (n - 1) x d<br>Pudiendo también verse de la siguiente forma:<br>an = dn + X<br>siendo X la diferencia entre -d y a1, o sea, X = (-d + a1)";
+			teory.style.fontSize="105%";
+			a=1;
+		} else {
+			if (a==3) {
+				teory.innerHTML="Ejecución<br>Existen varios casos:<br><br>Caso 1: Se nos da la progresión y se nos pide hallar el valor de una posición en concreto.<br>Ejemplo: an = 2 + (n - 1) x 3. Halle el valor en la posición 3.<br>Primero, se reemplazan las variables: an = 2 + (3-1) x 2<br>Entonces se inicia la resolución de la ecuación: an = 2 + 2 x 2<br>Y se continua naturalmente: an = 2 + 4<br>Encontrando la solución: an = 6";
+				teory.style.fontSize="130%";
+				a=2;
+			} else {
+				if (a==4) {
+				teory.innerHTML="Caso 2: Se nos da la distancia y el primer valor, pidiéndosenos hallar la progresión.<br>Ejemplo: d = 4 y a1 = 6. Halle la progresión.<br>Se reemplazan los valores: an = 6 + (n - 1) * 6<br>En teoría eso sería todo, pero se nos puede pedir en la forma an = dn + X<br>Así que: an = 6 + 6n - 6<br>Por lo cual: an = 6n (con X = 0)";
+				teory.style.fontSize="130%";
+				a=3;
+				} else {
+					if (a==5) {
+						teory.innerHTML="Caso 3: Se nos da el primer valor y un valor cualquiera junto a su posición, pidiéndosenos hallar la progresión y la distancia.<br>Ejemplo: a1 = 3, an = 15 con n = 4. Halle la progresión.<br>Como siempre, se reemplazan las variables: 15 = 3 + (4 - 1) x d<br>Por lo que: 15 = 3 + 3 x d<br>Así que: 15 - 3 = 3 x d<br>De manera que: 12 = 3 x d<br>Siguiendo con: 12 / 3 = d<br>Entonces: 4 = d<br>Siendo la progresión: an = 3 + (n - 1) x 4<br>Siendo en su otra forma: an = 3 + 4n - 4<br>Es decir: an = 4n - 1";
+						teory.style.fontSize="100%";
+				a=4;
+				siguiente.style.display="block";
+					} else {
+						if (a==1) {
+							teory.innerHTML='En matemáticas, una progresión aritmética es una sucesión de números tales que la diferencia de cualquier par de términos sucesivos de la secuencia es constante. Dicha cantidad es llamada "Diferencia de la Progresión", "Diferencia" o preferiblemente "Distancia".<br><br>Por ejemplo, la sucesión matemática 3, 5, 7, 9, ... es una progresión aritmética de diferencia constante 2, así como 5, 2, -1, -4, ... es una progresión aritmética de diferencia constante -3. A una progresión aritmética de Distancia negativa se le llama también regresión.';
+							teory.style.fontSize="135%";
+							anterior.style.display="none";
+							a=0;
+						}
+				}
+			}
+		}
+	}}
+</script>
+</body>
+</html>

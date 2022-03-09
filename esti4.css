@@ -1,0 +1,505 @@
+body{
+	background-color: #F1DDDD;
+
+}
+.tit{
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	font-size: 391%;
+	font-family: Yu Gothic UI Light;
+	line-height: 70%;
+}
+.cua{
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	top: 90%;
+	left: 0%;
+	background-color: #D84F4F;
+}
+.bo{
+	position: absolute;
+	top: 90.5%;
+	left: 41%;
+	background-color: #6AE0B5;
+	border-radius:30px;
+	width: 4%;
+	height: 9%;
+
+	}
+.bo1{
+	position: absolute;
+	top: 90.5%;
+	left: 59%;
+	background-color: #6AE0B5;
+	border-radius:30px;
+	width: 4%;
+	height: 9%;
+
+}
+	.pag{
+		position: absolute;
+		top: 93%;
+		left: 36%;
+		color: white;
+		text-decoration: none;
+
+	}
+	.pag1{
+		position: absolute;
+		top: 93%;
+		left: 52.2%;
+		color: white;
+		text-decoration: none;
+
+	}
+	.im1{
+		text-align: center;
+		width: 80%;
+		left: 10%;
+		top: 10%;
+		position: absolute;
+		height: 80%;
+
+	}
+	.im2{
+		text-align: center;
+		width: 80%;
+		left: 10%;
+		top: 10%;
+		position: absolute;
+		height: 80%;
+
+	}
+	.info{
+		position: absolute;
+		background-color: #E0F1F5;
+		top: 25%;
+		left: 10%;
+		height: 55%;
+		width: 80%;
+		border-color: #0C3F57;
+		border: solid.2px;
+	}
+	.tex{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		width: 90%;
+		height: 90%;
+		font-size: 130%;
+		font-family: Yu Gothic UI Light;
+		background-color: none;
+		text-align: justify;
+	}
+	.sig{
+		background-color: #D84F4F;
+		color: white;
+		position: absolute;
+		top: 81%;
+		font-family: Yu Gothic UI Light;
+		font-size: 100%;
+		text-align: center;
+		left: 50.5%;
+		width: 6%;
+		border: solid.1px;
+		border-color: black;
+		line-height: 250%;
+		height: 7.5%;
+		display: block;
+
+	}
+	.ant{
+		background-color: #D84F4F;
+		color: white;
+		position: absolute;
+		top:81%;
+		font-family: Yu Gothic UI Light;
+		font-size: 100%;
+		text-align: center;
+		left: 43.5%;
+		width: 6%;
+		border: solid.1px;
+		border-color: black;
+		line-height: 250%;
+		height: 7.5%;
+		display: none;
+
+	}
+	.elige{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 10%;
+		font-size: 200%;
+		text-align: center;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.caso1{
+		position: absolute;
+		top: 30%;
+		left: 2.5%;
+		width: 20%;
+		height: 20%;
+		text-align: center;
+		font-size: 150%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+		border-color: black;
+		border-width: 1px;
+		border-style: solid;
+		background-color: #D84F4F;
+	}
+	.caso2{
+		position: absolute;
+		top: 30%;
+		left: 27.5%;
+		width: 20%;
+		height: 20%;
+		text-align: center;
+		font-size: 150%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+	}
+	.caso3{
+		position: absolute;
+		top: 30%;
+		left: 52.5%;
+		width: 20%;
+		height: 20%;
+		text-align: center;
+		font-size: 150%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+		border-color: black;
+		border-style: solid;
+		border-width: 1px;
+		background-color: #D84F4F;
+	}
+	.caso4{
+		position: absolute;
+		top: 30%;
+		left: 77.5%;
+		width: 20%;
+		height: 20%;
+		text-align: center;
+		font-size: 150%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+	}
+	.posival{
+		position: absolute;
+		top: 20%;
+		left: 35%;
+		width: 30%;
+		height: 30%;
+		text-align: center;
+		font-size: 100%;
+		font-family: Yu Gothic UI Light;
+		color: white;
+		line-height: 170%;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+	}
+	.posi{
+		position: absolute;
+		top: 70%;
+		height: 10%;
+		width: 30%;
+		left: 35%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		font-size: 75%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.encovalo{
+		position: absolute;
+		top: 90%;
+		height: 10%;
+		width: 30%;
+		left: 35%;
+		text-align: center;
+		font-size: 75%;
+		color: white;
+		line-height: 100%;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+	}
+	.proceso1{
+		position: absolute;
+		top: 25%;
+		height: 60%;
+		width: 20%;
+		left: 70%;
+		font-size: 75%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.proceso2{
+		position: absolute;
+		top: 25%;
+		height: 60%;
+		width: 20%;
+		left: 90%;
+		font-size: 75%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.intentalo{
+		color: white;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+		font-family: Yu Gothic UI Light;
+	}
+	.volver{
+		position: absolute;
+		left: 0%;
+		height: 10%;
+		top: 85%;
+		color: white;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+		font-family: Yu Gothic UI Light;
+	}
+	.volver2{
+		position: absolute;
+		left: 80%;
+		height: 10%;
+		top: 92%;
+		color: white;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+		font-family: Yu Gothic UI Light;
+	}
+	.disti1{
+		position: absolute;
+		top: 50%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.a11{
+		position: absolute;
+		top: 70%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.boton2{
+		font-family: Yu Gothic UI Light;
+		position: absolute;
+		top: 90%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+		color: white;
+	}
+	.ponerprogresion1{
+		position: absolute;
+		top: 25%;
+		height: 50%;
+		left: 30%;
+		width: 70%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.dataazar1{
+		position: absolute;
+		top: 50%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.posiazar{
+		position: absolute;
+		top: 63.3%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.a31{
+		position: absolute;
+		top: 76.6%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.progre3{
+		position: absolute;
+		top: 89.9%;
+		height: 10%;
+		left: 0%;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		color: black;
+		font-family: Yu Gothic UI Light;
+		background-color: #D84F4F;
+		color: white;
+	}
+	.cuadridista{
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		height: 70%;
+		width: 20%;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.cuadri2{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		height: 70%;
+		width: 50%;
+		color: black;
+		font-family: Yu Gothic UI Light;
+	}
+	.volver3{
+		position: absolute;
+		left: 80%;
+		height: 10%;
+		top: 90%;
+		color: white;
+		width: 20%;
+		text-align: center;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+		font-family: Yu Gothic UI Light;
+	}
+	.progre1{
+		position: absolute;
+		top: 35%;
+		left: 25%;
+		height: 50%;
+		width: 25%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.progre13{
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		height: 50%;
+		width: 25%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.progre11{
+		position: absolute;
+		top: 32%;
+		left: 55%;
+		height: 50%;
+		width: 25%;
+		font-family: Yu Gothic UI Light;
+		color: black;
+	}
+	.an2{
+		position: absolute;
+		top: 30%;
+		left: 0%;
+		height: 10%;
+		width: 20%;
+		color: black;
+		font-family: Yu Gothic UI Light;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+	}
+	.n2{
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		height: 10%;
+		width: 20%;
+		color: black;
+		font-family: Yu Gothic UI Light;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+	}
+	.comprobar22{
+		position: absolute;
+		top: 70%;
+		left: 0%;
+		height: 10%;
+		width: 20%;
+		color: white;
+		border-width: 1px;
+		border-color: black;
+		border-style: solid;
+		background-color: #D84F4F;
+		font-family: Yu Gothic UI Light;
+	}
