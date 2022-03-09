@@ -1,7 +1,3 @@
-@media screen and (min-width:100px) and (max-width:1080px) {
-body{font-size:0.8em;}
-sidebar{display:none;}
-}
 body{
 	background-color: #F1DDDD;
 
