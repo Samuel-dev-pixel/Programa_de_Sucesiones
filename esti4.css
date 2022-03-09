@@ -1,4 +1,4 @@
-@media screen and (min-width:0px) and (max-width:1080px) {
+@media screen and (min-width:100px) and (max-width:1080px) {
 body{font-size:0.8em;}
 sidebar{display:none;}
 }
