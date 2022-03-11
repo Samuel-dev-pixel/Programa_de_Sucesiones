@@ -572,21 +572,8 @@ body{
 		font-family: Yu Gothic UI Light;
 		color: black;
 	}
-@media screen and (max-width: 898px){
+@media screen and (max-width: 427px){
 	.tex1{
-		position: absolute;
-		top: 5%;
-		left: 5%;
-		width: 90%;
-		height: 90%;
-		font-size: 120%;
-		font-family: Yu Gothic UI Light;
-		background-color: none;
-		text-align: justify;
-		box-sizing: border-box;
-		padding: 1px;
-	}
-	.tex2{
 		position: absolute;
 		top: 5%;
 		left: 5%;
@@ -599,13 +586,26 @@ body{
 		box-sizing: border-box;
 		padding: 1px;
 	}
+	.tex2{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		width: 90%;
+		height: 90%;
+		font-size: 105%;
+		font-family: Yu Gothic UI Light;
+		background-color: none;
+		text-align: justify;
+		box-sizing: border-box;
+		padding: 1px;
+	}
 	.tex3{
 		position: absolute;
 		top: 5%;
 		left: 5%;
 		width: 90%;
 		height: 90%;
-		font-size: 120%;
+		font-size: 110%;
 		font-family: Yu Gothic UI Light;
 		background-color: none;
 		text-align: justify;
@@ -632,7 +632,7 @@ body{
 	width: 100%;
 	height: 10%;
 	text-align: center;
-	font-size: 250%;
+	font-size: 200%;
 	font-family: Yu Gothic UI Light;
 	line-height: 100%;
 	font-weight: bold;
@@ -874,7 +874,7 @@ body{
 	}
 	.progresion1{
 		position: absolute;
-		top: 30%;
+		top: 33%;
 		height: 10%;
 		width: 100%;
 		left: 0%;
@@ -1072,11 +1072,11 @@ body{
 	}
 	.volver3{
 		position: absolute;
-		left: 70%;
-		height: 10%;
-		top: 90%;
+		left: 80%;
+		height: 15%;
+		top: 89%;
 		color: white;
-		width: 30%;
+		width: 24%;
 		text-align: center;
 		border-width: 1px;
 		border-color: black;
@@ -1105,7 +1105,7 @@ body{
 	}
 	.progre11{
 		position: absolute;
-		top: 60%;
+		top: 65%;
 		left: 40%;
 		height: 30%;
 		width: 60%;
