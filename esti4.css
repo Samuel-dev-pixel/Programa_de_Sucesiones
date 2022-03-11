@@ -572,14 +572,14 @@ body{
 		font-family: Yu Gothic UI Light;
 		color: black;
 	}
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 414px){
 	.tex1{
 		position: absolute;
 		top: 5%;
 		left: 5%;
 		width: 90%;
 		height: 90%;
-		font-size: 300%;
+		font-size: 120%;
 		font-family: Yu Gothic UI Light;
 		background-color: none;
 		text-align: justify;
@@ -592,7 +592,7 @@ body{
 		left: 5%;
 		width: 90%;
 		height: 90%;
-		font-size: 300%;
+		font-size: 110%;
 		font-family: Yu Gothic UI Light;
 		background-color: none;
 		text-align: justify;
@@ -605,7 +605,7 @@ body{
 		left: 5%;
 		width: 90%;
 		height: 90%;
-		font-size: 300%;
+		font-size: 120%;
 		font-family: Yu Gothic UI Light;
 		background-color: none;
 		text-align: justify;
@@ -618,7 +618,7 @@ body{
 		left: 5%;
 		width: 90%;
 		height: 90%;
-		font-size: 300%;
+		font-size: 120%;
 		font-family: Yu Gothic UI Light;
 		background-color: none;
 		text-align: justify;
@@ -627,12 +627,12 @@ body{
 	}
 	.tit{
 	position: absolute;
-	top: 2%;
+	top: 0%;
 	left: 0%;
 	width: 100%;
 	height: 10%;
 	text-align: center;
-	font-size: 450%;
+	font-size: 250%;
 	font-family: Yu Gothic UI Light;
 	line-height: 100%;
 	font-weight: bold;
@@ -671,17 +671,17 @@ body{
 }
 .pag{
 		position: absolute;
-		top: 82%;
+		top: 81%;
 		left: 30%;
 		color: white;
 		height: 5%;
-		font-size: 750%;
+		font-size: 300%;
 		text-decoration: none;
 	}
 	.pag1{
 		position: absolute;
-		font-size: 750%;
-		top: 92%;
+		font-size: 300%;
+		top: 91%;
 		left: 30%;
 		height: 5%;
 		color: white;
@@ -695,7 +695,7 @@ body{
 		position: absolute;
 		top: 67%;
 		font-family: Yu Gothic UI Light;
-		font-size: 500%;
+		font-size: 200%;
 		text-align: center;
 		left: 55%;
 		width: 35%;
@@ -714,7 +714,7 @@ body{
 		position: absolute;
 		top: 67%;
 		font-family: Yu Gothic UI Light;
-		font-size: 500%;
+		font-size: 200%;
 		text-align: center;
 		left: 10%;
 		width: 35%;
@@ -940,7 +940,7 @@ body{
 	}
 	.disti1{
 		position: absolute;
-		top: 30%;
+		top: 35%;
 		height: 10%;
 		left: 0%;
 		width: 35%;
@@ -954,7 +954,7 @@ body{
 	}
 	.a11{
 		position: absolute;
-		top: 45%;
+		top: 50%;
 		height: 10%;
 		left: 0%;
 		width: 35%;
@@ -993,7 +993,7 @@ body{
 	}
 	.dataazar1{
 		position: absolute;
-		top: 35%;
+		top: 40%;
 		height: 10%;
 		left: 0%;
 		width: 30%;
@@ -1007,7 +1007,7 @@ body{
 	}
 	.posiazar{
 		position: absolute;
-		top: 50%;
+		top: 55%;
 		height: 10%;
 		left: 0%;
 		width: 30%;
@@ -1021,7 +1021,7 @@ body{
 	}
 	.a31{
 		position: absolute;
-		top: 65%;
+		top: 70%;
 		height: 10%;
 		left: 0%;
 		width: 30%;
@@ -1035,12 +1035,12 @@ body{
 	}
 	.progre3{
 		position: absolute;
-		top: 80%;
+		top: 85%;
 		height: 20%;
 		left: 0%;
 		width: 30%;
 		line-height: 200%;
-		font-size: 105%;
+		font-size: 100%;
 		text-align: center;
 		border-width: 1px;
 		border-color: black;
@@ -1097,7 +1097,7 @@ body{
 .progre13{
 		position: absolute;
 		top: 20%;
-		left: 40%;
+		left: 50%;
 		height: 50%;
 		width: 60%;
 		font-family: Yu Gothic UI Light;
