@@ -572,7 +572,7 @@ body{
 		font-family: Yu Gothic UI Light;
 		color: black;
 	}
-@media screen and (max-width: 414px){
+@media screen and (max-width: 898px){
 	.tex1{
 		position: absolute;
 		top: 5%;
